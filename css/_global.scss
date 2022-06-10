@@ -1,0 +1,41 @@
+
+
+body,html {
+    box-sizing: border-box;
+    font-family: $ubuntu;
+}
+
+body {
+    color: $primary;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: #fafa;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+.btn {
+    padding: 13px 16px;
+    background-color: $primaryOrange;
+    border-radius: 5px;
+    color: $primary;
+    font-size: 13px;
+  font-weight: 500;
+}

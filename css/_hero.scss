@@ -1,0 +1,43 @@
+.section-hero {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 149px;
+    background: url("../img/hero-bg.png") center center / cover no-repeat;
+}
+
+.image-container {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 54px;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.hero__heading-container {
+    margin-top: 90px;
+    margin-left: 20px;
+
+    .hero__heading {
+
+        font-family: $fontGagalin;
+        font-size: 72px;
+        font-weight: normal;
+        letter-spacing: normal;
+        color: $headingOrange;
+    }
+
+    .hero__description {
+        font-family: $fontLifehack;
+        font-size: 65px;
+        font-weight: 500;
+    }
+
+}
