@@ -1,0 +1,71 @@
+.section-team {
+    background: url('../img/section-team__bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-left: auto;
+}
+
+.profile-container {
+    width: 50%;
+    margin-left: auto;
+    background: rgba($color: #2e3133, $alpha: .8);
+    
+}
+
+.profile-content {
+    padding: 20% 20%
+}
+
+.profile-item {
+    margin: 40px 0;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.profile__heading {
+    margin-bottom: 50px;
+}
+
+.profile__accordion {
+    display: flex;
+    align-items: center;
+}
+
+.accordion__arrow {
+    margin-right: 5px;
+}
+
+.profile__name {
+    font-family: $fontGagalin;
+    color: $primary;
+}
+
+.profile__description {
+    display: none;
+    align-items: center;
+    padding: 3%;
+}
+
+.accrodion_active {
+    display: flex;
+}
+
+.profile__icon {
+    margin-right: 20px;
+}
+
+.profile__description__container {
+    display: flex;
+    flex-direction: column;
+    font-family: $ubuntu;
+}
+
+.profile__job-title {
+    color: $primary;
+}
+
+.profle__job-subtitle {
+    color: $primary;
+    opacity: 0.8;
+}

@@ -1,7 +1,9 @@
 .section-we {
     padding-top: 136px;
     padding-bottom: 136px;
-    background: url('../img/section-we_bg.png') center center / cover no-repeat;
+    background: url('../img/section-we_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .we-heading {
