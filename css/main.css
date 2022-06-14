@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
@@ -38,6 +39,22 @@ ul {
   color: white;
   font-size: 13px;
   font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.heading {
+  font-family: "Gagalin";
+  font-size: 72px;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+.section-description {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 @font-face {
@@ -151,14 +168,145 @@ ul {
   margin-left: 20px;
 }
 .hero__heading-container .hero__heading {
-  font-family: "Gagalin";
-  font-size: 72px;
-  font-weight: normal;
-  letter-spacing: normal;
   color: #f9b43b;
 }
 .hero__heading-container .hero__description {
   font-family: "Lifehack";
   font-size: 65px;
   font-weight: 500;
+}
+
+.section-we {
+  padding-top: 136px;
+  padding-bottom: 136px;
+  background: url("../img/section-we_bg.png") center center/cover no-repeat;
+}
+
+.we-heading {
+  text-align: center;
+  color: black;
+}
+
+.section-we__list {
+  padding-top: 50px;
+  padding-left: 1%;
+  padding-right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-we__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.section-we__item.section-we__item:nth-child(3) {
+  margin-top: 16px;
+}
+
+.section-we__item__heading {
+  margin-bottom: 15px;
+  font-family: "Lifehack";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  color: black;
+}
+
+.section-we__item__description {
+  color: #6d6e6e;
+}
+
+.section-we__icon {
+  margin-bottom: 30px;
+}
+
+.section-burgers {
+  background: url("../img/section-burgers__bg.png") center center/cover no-repeat;
+}
+
+.burgers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.burgers__image-container {
+  width: 50%;
+}
+
+.section-burgers__img {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.btn-compound {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.burgers__description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  color: #c1401e;
+}
+
+.burgers__heading {
+  color: white;
+}
+
+.burgers__description {
+  color: white;
+}
+
+.burgers__price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 35%;
+}
+
+.burgers__price {
+  padding: 0;
+  margin: 0;
+}
+
+.burgers__currency {
+  font-size: 25px;
 }

@@ -1,0 +1,57 @@
+.section-burgers {
+    background: url('../img/section-burgers__bg.png') center center / cover no-repeat;
+}
+
+.burgers__container {
+    display: flex;
+    padding: 90px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burgers__image-container {
+    width: 50%;
+}
+
+.section-burgers__img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.btn-compound {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.burgers__description-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: $primaryOrange;
+}
+
+.burgers__heading {
+    color: $primary;
+}
+
+.burgers__description {
+    color: $primary;
+}
+
+.burgers__price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 35%;
+}
+
+.burgers__price {
+    padding: 0;
+    margin: 0;
+}
+
+.burgers__currency {
+    font-size: 25px;
+}

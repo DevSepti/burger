@@ -1,6 +1,5 @@
-
-
-body,html {
+body,
+html {
     box-sizing: border-box;
     font-family: $ubuntu;
 }
@@ -37,5 +36,21 @@ ul {
     border-radius: 5px;
     color: $primary;
     font-size: 13px;
-  font-weight: 500;
+    font-weight: 500;
+    font-family: $ubuntu;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.heading {
+    font-family: $fontGagalin;
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.section-description {
+    font-family: $ubuntu;
+    font-size: 14px;
+    line-height: 28px;
 }
