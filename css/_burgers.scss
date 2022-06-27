@@ -4,9 +4,15 @@
 
 .burgers__container {
     display: flex;
-    padding: 90px 0;
+    padding: rem(90px) 0;
     align-items: center;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
 }
 
 .burgers__image-container {
@@ -15,14 +21,14 @@
 
 .section-burgers__img {
     width: 100%;
-    margin-top: 70px;
+    margin-top: rem(70px);
 }
 
 .btn-compound {
     position: absolute;
-    width: 90px;
-    height: 90px;
-    border-radius: 5px;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: rem(5px);
 }
 
 .burgers__description-container {
@@ -45,6 +51,11 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-right: 35%;
+
+    @include tablets {
+        justify-content: center;
+        padding-right: 0;
+    }
 }
 
 .burgers__price {
@@ -53,5 +64,6 @@
 }
 
 .burgers__currency {
-    font-size: 25px;
+    font-size: rem(25px);
+    margin-right: rem(20px);
 }

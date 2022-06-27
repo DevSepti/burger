@@ -11,6 +11,11 @@
     margin-left: auto;
     background: rgba($color: #2e3133, $alpha: .8);
     
+    @include tablets {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 .profile-content {
@@ -18,27 +23,34 @@
 }
 
 .profile-item {
-    margin: 40px 0;
-    font-size: 14px;
-    line-height: 28px;
+    margin: rem(40px) 0;
+    font-size: rem(14px);
+    line-height: rem(28px);
+
 }
 
 .profile__heading {
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
 }
 
 .profile__accordion {
     display: flex;
     align-items: center;
+    cursor: pointer;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .accordion__arrow {
-    margin-right: 5px;
+    margin-right: rem(5px);
 }
 
 .profile__name {
     font-family: $fontGagalin;
     color: $primary;
+    
 }
 
 .profile__description {
@@ -49,10 +61,19 @@
 
 .accrodion_active {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .profile__icon {
-    margin-right: 20px;
+    margin-right: rem(20px);
+
+    @include tablets {
+        margin-right: 0;
+    }
 }
 
 .profile__description__container {

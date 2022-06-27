@@ -1,16 +1,14 @@
 .section-hero {
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 149px;
+    padding-top: rem(70px);
+    padding-bottom: rem(149px);
     background: url("../img/hero-bg.png") center center / cover no-repeat;
 }
 
 .image-container {
-    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 54px;
 }
 
 .hero__container {
@@ -18,12 +16,16 @@
     align-items: center;
     justify-content: center;
 
-
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .hero__heading-container {
-    margin-top: 90px;
-    margin-left: 20px;
+    margin-top: rem(90px);
+    margin-left: rem(20px);
 
     .hero__heading {
         color: $headingOrange;
@@ -31,8 +33,16 @@
 
     .hero__description {
         font-family: $fontLifehack;
-        font-size: 65px;
+        font-size: rem(65px);
         font-weight: 500;
+
+        @include phones {
+            font-size: rem(40px);
+        }
+    }
+
+    @include tablets {
+        text-align: center;
     }
 
 }

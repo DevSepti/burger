@@ -52,12 +52,16 @@
                             <a href="" class="navigation__link">контакты</a>
                         </li>
                     </ul>
-                    <a href="" class="btn">Заказать</a>
+                    <div class="header__btns">
+                        <a href="" class="btn header__btn">Заказать</a>
+                        <img class="header__burger-menu" src="./img/header-menu-burger.png" alt="menu-burger">
+                    </div>
+
                 </div>
             </div>
         </header>
         <div class="main-content">
-            <section class="section-hero">
+            <section class="section-hero section">
                 <div class="container">
                     <div class="hero__container">
                         <div class="image-container">
@@ -74,35 +78,44 @@
                     </div>
                 </div>
             </section>
-            <section class="section-we">
-                <div class="container">
+            <section class="section-we section">
+                <div class="section-we__container container">
                     <div class="heading we-heading">Мы лучшие</div>
                     <ul class="section-we__list">
                         <li class="section-we__item">
                             <img class="section-we__icon" src="./img/section-we__icon-meet.png" alt="">
-                            <div class="section-we__item__heading">100% свежее мясо</div>
-                            <div class="section-description section-we__item__description">Драма представляет собой
-                                деструктивный цикл. Анапест представляет собой деструктивный цикл. Анапест представляет
-                                собой анапест. Ямб неравномерен</div>
+                            <div class="section__item-text">
+                                <div class="section-we__item__heading">100% свежее мясо</div>
+                                <div class="section-description section-we__item__description">Драма представляет собой
+                                    деструктивный цикл. Анапест представляет собой деструктивный цикл. Анапест
+                                    представляет
+                                    собой анапест. Ямб неравномерен</div>
+                            </div>
                         </li>
                         <li class="section-we__item">
                             <img class="section-we__icon" src="./img/section-we__icon-hand.png" alt="">
-                            <div class="section-we__item__heading">Ручная сборка</div>
-                            <div class="section-description section-we__item__description">Драма представляет собой
-                                деструктивный цикл. Анапест представляет собой деструктивный цикл. Анапест представляет
-                                собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+                            <div class="section__item-text">
+                                <div class="section-we__item__heading">Ручная сборка</div>
+                                <div class="section-description section-we__item__description">Драма представляет собой
+                                    деструктивный цикл. Анапест представляет собой деструктивный цикл. Анапест
+                                    представляет
+                                    собой анапест. Ямб неравномерен</div>
+                            </div>
                         </li>
                         <li class="section-we__item">
                             <img class="section-we__icon" src="./img/section-we__icon-natural.png" alt="">
-                            <div class="section-we__item__heading">Натуральные ингрединты</div>
-                            <div class="section-description section-we__item__description">Драма представляет собой
-                                деструктивный цикл. Анапест представляет собой деструктивный цикл. Анапест представляет
-                                собой анапест.</div>
+                            <div class="section__item-text">
+                                <div class="section-we__item__heading">Натуральные ингредиенты</div>
+                                <div class="section-description section-we__item__description">Драма представляет собой
+                                    деструктивный цикл. Анапест представляет собой деструктивный цикл. Анапест
+                                    представляет
+                                    собой анапест. Ямб неравномерен</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="section-burgers">
+            <section class="section-burgers section">
                 <div class="container burgers__container">
                     <div class="burgers__image-container">
                         <a class="btn-compound" href="">
@@ -123,7 +136,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-team left-container">
+            <section class="section-team left-container section">
                 <div class="profile-container">
                     <div class="container">
                         <div class="profile-content">
@@ -192,15 +205,241 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
+
+            </section>
+            <!-- <section class="section-menu section">
+                <div class="menu__container">
+                    <div class="heading menu__heading">Меню</div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="menu__link-container">
+                                <div class="menu__link menu__link_active">
+                                    для мясоедов
+                                </div>
+                            </div>
+                            <div class="menu__accordion menu__accrodion_active">
+                                <div class="menu__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, laborum optio.
+                                    Natus consectetur in possimus architecto reiciendis quidem animi sunt? Recusandae
+                                    voluptate eveniet nemo voluptatibus omnis atque sapiente fuga hic!
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__link-container">
+                                <div class="menu__link menu__link_active">
+                                    вегетарианское
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__link-container">
+                                <div class="menu__link menu__link_active">
+                                    диетическое
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
+            <section class="section-reviews section">
+                <ul class="reviews__list">
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card1.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них,о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                    расплавленным.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card2.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading"></div>
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, culpa tenetur.
+                                    Molestias omnis doloremque expedita esse, quibusdam id maiores magnam soluta sit
+                                    est, sequi mollitia? Sequi minima soluta culpa ipsum.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card3.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading"></div>
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, culpa tenetur.
+                                    Molestias omnis doloremque expedita esse, quibusdam id maiores magnam soluta sit
+                                    est, sequi mollitia? Sequi minima soluta culpa ipsum.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card4.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading"></div>
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, culpa tenetur.
+                                    Molestias omnis doloremque expedita esse, quibusdam id maiores magnam soluta sit
+                                    est, sequi mollitia? Sequi minima soluta culpa ipsum.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card5.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading"></div>
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, culpa tenetur.
+                                    Molestias omnis doloremque expedita esse, quibusdam id maiores magnam soluta sit
+                                    est, sequi mollitia? Sequi minima soluta culpa ipsum.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card6.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading"></div>
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, culpa tenetur.
+                                    Molestias omnis doloremque expedita esse, quibusdam id maiores magnam soluta sit
+                                    est, sequi mollitia? Sequi minima soluta culpa ipsum.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card7.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading"></div>
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, culpa tenetur.
+                                    Molestias omnis doloremque expedita esse, quibusdam id maiores magnam soluta sit
+                                    est, sequi mollitia? Sequi minima soluta culpa ipsum.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="reviews__item" style="background-image: url('./img/reviews__card8.png');">
+                        <div class="reviews__hover-block">
+                            <div class="reviews__heading"></div>
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, culpa tenetur.
+                                    Molestias omnis doloremque expedita esse, quibusdam id maiores magnam soluta sit
+                                    est, sequi mollitia? Sequi minima soluta culpa ipsum.</p>
+                            </div>
+                            <a href="#" class="btn reviews__btn">Подробнее</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-main-form section">
+                <div class="container">
+                    <div class="form__coment-container">
+                        <div class="heading form__heading">Закажите доставку</div>
+                        <form class="main-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on"
+                            method="POST">
+                            <div class="form__left-container">
+                                <div class="input__container">
+                                    <div class="form__row">
+                                        <label for="" class="fomr__block">
+                                            <div class="input__heading">Имя</div>
+                                            <input type="text" class="form__input" name="name">
+                                        </label>
+                                        <label for="" class="fomr__block">
+                                            <div class="input__heading">Телефон</div>
+                                            <input type="tel" class="form__input" name="phone">
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="" class="fomr__block">
+                                            <div class="input__heading">Улица</div>
+                                            <input type="text" class="form__input" name="street">
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="" class="fomr__block">
+                                            <div class="input__heading">Дом</div>
+                                            <input type="text" class="form__input" name="house">
+                                        </label>
+                                        <label for="" class="fomr__block">
+                                            <div class="input__heading">Корпус</div>
+                                            <input type="text" class="form__input" name="housing">
+                                        </label>
+                                        <label for="" class="fomr__block">
+                                            <div class="input__heading">Квартира</div>
+                                            <input type="text" class="form__input" name="apartment">
+                                        </label>
+                                        <label for="" class="fomr__block">
+                                            <div class="input__heading">Этаж</div>
+                                            <input type="text" class="form__input" name="floor">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fomr__right-container">
+                                <div class="form__row">
+                                    <label for="" class="fomr__block">
+                                        <div class="input__heading">Комментарий</div>
+                                        <textarea class="form__textarea" name="comment" name="comment" id="" cols="30"
+                                            rows="10" placeholder="Введите коментарий"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form__input-btn-container">
+                                    <div class="radio-container">
+                                        <label class="form__label-radio">
+                                            <input class="form__radio-btn" type="radio" name="radio-btn" id="radio">
+                                            <div class="input__radio_visible"></div>
+                                            <div class="fomr__item-heading">Потребуется сдача</div>
+                                        </label>
+                                        <label class="form__label-radio">
+                                            <input class="form__radio-btn" type="radio" name="radio-btn" id="radio">
+                                            <div class="input__radio_visible"></div>
+                                            <div class="fomr__item-heading">Оплата по карте</div>
+                                        </label>
+                                    </div>
+                                    <label class="radio-container">
+                                        <input class="form__btn-ckeckbox" type="checkbox" name="" id="">
+                                        <div class="btn-ckeckbox_visible"></div>
+                                        <div class="fomr__item-heading">Не перезванивать</div>
+                                    </label>
+                                </div>
+                                <div class="bottom-container">
+                                    <button class="btn" type="submit">Заказать</button>
+                                    <a class="btn form__btn-clear">Отчистить</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
         </div>
-
-        </section>
     </div>
-    </div>
-
-
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="foter__contacts">
+                <div class="contacts__adress">
+                    <p>Санкт-Петербург, ул.Бабушкина, д.12/1, 15 </p>
+                </div>
+                <div class="contacts__phone">
+                    <a href="tel:+79503771377" class="footer__phone-link">
+                        <img class="footer__phone-icon" src="./img/icon-phone.png" alt="icon phone">
+                        <p>+7 (950) 377-13-77</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__social">
+                <img class="footer__social-icon" src="./img/vk.svg" alt="icon vk">
+                <img class="footer__social-icon" src="./img/fb_hover.png" alt="icon fb">
+                <img class="footer__social-icon" src="./img/icon-inst.png" alt="icon istagramm">
+                <img class="footer__social-icon" src="./img/icon-twitter.png" alt="icon twitter">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

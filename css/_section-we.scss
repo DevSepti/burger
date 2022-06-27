@@ -1,9 +1,15 @@
 .section-we {
-    padding-top: 136px;
-    padding-bottom: 136px;
+    padding-top: rem(136px);
+    padding-bottom: rem(136px);
     background: url('../img/section-we_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.section-we__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .we-heading {
@@ -12,11 +18,15 @@
 }
 
 .section-we__list {
-    padding-top: 50px;
+    padding-top: rem(50px);
     padding-left: 1%;
     padding-right: 1%;
     display: flex;
     align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .section-we__item {
@@ -27,24 +37,30 @@
     text-align: center;
 
     &.section-we__item:nth-child(3){
-       margin-top: 16px;
+       margin-top: rem(16px);
     }
     
+    @include phones {
+        flex-direction: row;
+    }
 }
 
 .section-we__item__heading {
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     font-family: $fontLifehack;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: rem(24px);
+    line-height: rem(28px);
     font-weight: normal;
     color: $headingBlack;
 }
 
+.section__item-text {
+    text-align: left;
+}
 .section-we__item__description {
     color: $textDescription;
 }
 
 .section-we__icon {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }

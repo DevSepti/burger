@@ -1,0 +1,136 @@
+.section-main-form {
+    background: url('../img/form-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: rem(136px) 0;
+}
+
+.form__coment-container {
+    display: 1;
+}
+
+.form__heading {
+    text-align: center;
+    color: $headingOrange;
+    margin-bottom: rem(40px);
+}
+
+.main-form {
+    display: flex;
+    justify-content: center;
+    gap: rem(20px);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.form__left-container {
+    width: 50%;
+}
+
+.form__row {
+    display: flex;
+}
+
+.fomr__block {
+    flex: 1;
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: rem(0px);
+    }
+}
+
+.form__input {
+    width: 100%;
+    padding:rem(10px) 0;
+    border-radius: rem(5px);
+}
+
+.input__heading {
+    font-family: $ubuntu;
+    font-weight: normal;
+    font-size: rem(14px);
+    line-height: rem(24px);
+}
+
+// Right
+.fomr__right-container {
+    width: 50%;
+}
+
+.form__input-btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.fomr__item-heading {
+    font-family: $ubuntu;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $primary;
+}
+
+.form__textarea {
+    width: 100%;
+    padding:rem(10px) 0;
+    border-radius: rem(5px);
+    border: none;
+    resize: none;
+}
+
+.radio-container {
+    margin-bottom: rem(25px);
+}
+
+.form__label-radio {
+    display: flex;
+    align-items: center;
+    margin-right: rem(15px)
+}
+
+.form__radio-btn {
+    display: none;
+}
+
+.form__radio-btn:checked ~ .input__radio_visible {
+    width: rem(7px);
+    height: rem(7px);
+    border: rem(4px) solid $primary;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.input__radio_visible {
+    width: rem(15px);
+    height: rem(15px);
+    border-radius: 50%;
+    background-color: $primary;
+    margin-right: rem(10px);
+}
+
+.form__btn-ckeckbox {
+    display: none;
+}
+
+.form__btn-ckeckbox:checked ~ .btn-ckeckbox_visible {
+    background-image: url('../img/input-checked.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-ckeckbox_visible {
+    width: rem(15px);
+    height: rem(15px);
+    margin-bottom: rem(20px);
+    background-color: $primary;
+    margin-right: rem(10px);
+}
+
