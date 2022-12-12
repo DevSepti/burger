@@ -1,0 +1,33 @@
+.header__menu-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    width: 100%;
+    height: 100vh;
+    padding-top: rem(100px);
+    background:rgba($color: #00000074, $alpha: 0.8);
+    z-index: 15;
+    display: none;
+}
+
+.overlay__content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay__item {
+    margin-bottom: rem(20px);
+}
+
+.overlay__link {
+    font-size: 20px;
+    color: $primary;
+
+    &:hover {
+        color: red;
+    }
+}

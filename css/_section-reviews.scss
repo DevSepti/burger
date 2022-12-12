@@ -46,10 +46,15 @@
         text-align: center;
         padding: rem(20px) rem(16px);
         align-items: center;
+        justify-content: center;
     }
 }
 .reviews__text {
     color: white;
+
+    @include phones {
+        display: none;
+    }
 }
 
 .reviews__heading {
@@ -74,6 +79,18 @@
 .reviews__btn {
     text-align: center;
     width: 30%;
+
+    @include phones {
+        display: none;
+    }
+}
+
+.reviews__btn_mobile {
+    display: none;
+
+    @include phones {
+        display: block;
+    }
 }
 
 

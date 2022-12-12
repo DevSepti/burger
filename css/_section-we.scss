@@ -1,6 +1,6 @@
 .section-we {
-    padding-top: rem(136px);
-    padding-bottom: rem(136px);
+    // padding-top: rem(136px);
+    // padding-bottom: rem(136px);
     background: url('../img/section-we_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,11 @@
 }
 
 .section__item-text {
-    text-align: left;
+    text-align: center;
+
+    @include phones {
+        text-align: left;
+    }
 }
 .section-we__item__description {
     color: $textDescription;

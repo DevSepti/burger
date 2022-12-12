@@ -1,69 +1,118 @@
 .section-burgers {
-    background: url('../img/section-burgers__bg.png') center center / cover no-repeat;
+    background-image: url('../img/burgers-background.png');
 }
 
-.burgers__container {
+.slider__container {
+    height: 100%;
+}
+
+.slider__items {
     display: flex;
-    padding: rem(90px) 0;
     align-items: center;
     justify-content: space-between;
-
-    @include tablets {
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-    }
 }
 
-.burgers__image-container {
-    width: 50%;
-}
-
-.section-burgers__img {
-    width: 100%;
-    margin-top: rem(70px);
-}
-
-.btn-compound {
-    position: absolute;
-    width: rem(90px);
-    height: rem(90px);
-    border-radius: rem(5px);
-}
-
-.burgers__description-container {
+.image-content {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    color: $primaryOrange;
+    align-items: flex-start;
 }
 
-.burgers__heading {
-    color: $primary;
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.burgers__description {
-    color: $primary;
+.href__burger {
+    display: flex;
+    position: relative;
+}
+
+.href__burger-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    
+
+    .burger__compound-container {
+        position: absolute;
+        left: 100%;
+        display: none;
+        margin: 0;
+
+    }
+
+    &:hover .href__burger-compound:hover {
+        background-color: #e35028;
+        border-radius: rem(10px);
+    }
+
+    &:hover .burger__compound-container {
+        display: block;
+    }
+
+
+}
+
+.href__burger-compound {
+    padding: rem(10px) rem(20px);
+    background-color: #f08c33;
+    border-radius: rem(10px);
+
+}
+
+.compound__list {
+    background-color: #f1ece6de;
+    border-radius: rem(10px);
+    padding: 10px 20px;
+}
+
+.compound__item {
+    display: flex;
+    padding: rem(20px);
+    margin-bottom: rem(10px);
+    justify-content: space-around;
+    color: black;
+}
+
+.compound__item-icon {
+    margin-right: rem(20px);
+}
+
+.compound__item_name {
+    margin-right: rem(100px);
+}
+
+.compound__item-gramm {
+    left: 0;
 }
 
 .burgers__price-container {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    padding-right: 35%;
-
-    @include tablets {
-        justify-content: center;
-        padding-right: 0;
-    }
 }
 
-.burgers__price {
-    padding: 0;
-    margin: 0;
+.price__currency {
+    font-size: rem(20px);
+    margin-right: 20px;
 }
 
-.burgers__currency {
-    font-size: rem(25px);
-    margin-right: rem(20px);
+.slider__btn {
+    margin: 0 rem(20px);
+    width: rem(60px);
+    height: rem(60px);
+
+    cursor: pointer;
+
+
 }
+
+// .btn_next {
+//     right: 0;
+
+// }
+
+// .btn_prev {
+//     left: 0;
+// }

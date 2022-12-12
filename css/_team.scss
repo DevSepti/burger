@@ -27,6 +27,9 @@
     font-size: rem(14px);
     line-height: rem(28px);
 
+    button > * {
+        pointer-events: none;
+    }
 }
 
 .profile__heading {
@@ -59,8 +62,25 @@
     padding: 3%;
 }
 
+.accordion_active + .profile__description {
+    display: block;
+}
+
+
 .accrodion_active {
-    display: flex;
+    display: none;
+    
+    .accordion__arrow {
+        transform: rotate(180deg);
+    }
+
+    .profile__name  {
+        color: $headingOrange;
+    }
+
+    .profile__description {
+        display: flex;
+    }
 
     @include tablets {
         flex-direction: column;

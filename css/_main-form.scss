@@ -2,7 +2,7 @@
     background: url('../img/form-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: rem(136px) 0;
+     
 }
 
 .form__coment-container {
@@ -28,6 +28,10 @@
 
 .form__left-container {
     width: 50%;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .form__row {
@@ -59,6 +63,10 @@
 // Right
 .fomr__right-container {
     width: 50%;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .form__input-btn-container {
@@ -69,6 +77,10 @@
 .radio-container {
     display: flex;
     align-items: center;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .fomr__item-heading {
@@ -132,5 +144,12 @@
     margin-bottom: rem(20px);
     background-color: $primary;
     margin-right: rem(10px);
+}
+
+.bottom-container {
+    display: flex;
+    @include phones {
+        justify-content: center;
+    }
 }
 
